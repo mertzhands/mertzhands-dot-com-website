@@ -14,9 +14,9 @@ export default function Home() {
       </header>
 
       <section className="hero" id="top">
-        <h1 className="sr-only">Mertz Hands — Thoughtful things, made well.</h1>
+        <h1 className="sr-only">Mertz Hands — How may we help you?</h1>
         <div className="hero-poster">
-          <img src="/og.png" alt="Mertz Hands — Thoughtful things, made well, beside a walnut Scandinavian lounge chair" />
+          <img src="/hero-piano-v7.png" alt="Mertz Hands — How may we help you? Beside an exposed-action upright piano, a wooden metronome, and pencils." />
         </div>
         <div className="hero-intro">
           <p className="overline">Music instruction · Creative direction · Chicago</p>

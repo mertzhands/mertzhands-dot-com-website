@@ -7,18 +7,18 @@ export const metadata: Metadata = {
   description:
     "Vocal and piano instruction, music theory, manuscript creation, and music direction shaped around your goals.",
   openGraph: {
-    title: "Mertz Hands — Thoughtful things, made well",
+    title: "Mertz Hands — How may we help you?",
     description:
       "Vocal and piano instruction, music theory, manuscript creation, and music direction shaped around your goals.",
     type: "website",
-    images: [{ url: "/og.png", width: 1536, height: 1024 }],
+    images: [{ url: "/hero-piano-v7.png", width: 1536, height: 1024 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mertz Hands — Thoughtful things, made well",
+    title: "Mertz Hands — How may we help you?",
     description:
       "Music instruction and creative direction shaped around your goals.",
-    images: ["/og.png"],
+    images: ["/hero-piano-v7.png"],
   },
   icons: {
     icon: "/favicon.svg",
