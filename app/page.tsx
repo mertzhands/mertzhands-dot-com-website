@@ -14,9 +14,12 @@ export default function Home() {
       </header>
 
       <section className="hero" id="top">
-        <div className="hero-copy">
-          <p className="overline">Independent creative practice · Chicago</p>
-          <h1>Thoughtful<br />things,<br /><em>made well.</em></h1>
+        <h1 className="sr-only">Mertz Hands — Thoughtful things, made well.</h1>
+        <div className="hero-poster">
+          <img src="/og.png" alt="Mertz Hands — Thoughtful things, made well, beside a walnut Scandinavian lounge chair" />
+        </div>
+        <div className="hero-intro">
+          <p className="overline">Music instruction · Creative direction · Chicago</p>
           <div className="hero-bottom">
             <p>
               Helping singers, musicians, students, and creative people turn
@@ -24,11 +27,6 @@ export default function Home() {
             </p>
             <a href="#practice" aria-label="Explore the practice">↓</a>
           </div>
-        </div>
-        <div className="hero-room">
-          <img src="/og.png" alt="A walnut Scandinavian lounge chair in a warm, textured room" />
-          <span className="room-label">A space to listen · learn · make</span>
-          <i className="room-orb" aria-hidden="true" />
         </div>
       </section>
 
@@ -62,6 +60,7 @@ export default function Home() {
           <p className="section-no">02 / Practice</p>
           <h2>Ways I can help<br />you move forward</h2>
         </div>
+        <p className="catalogue-note">A considered practice for the whole musical person.</p>
         <div className="offerings">
           <a className="vocal" href="mailto:hello@mertzhands.com?subject=Vocal%20instruction">
             <span>01</span><h3>Vocal instruction</h3><p>Personalized coaching to build a healthy, expressive voice and the confidence to use it fully.</p><i>↗</i>
@@ -106,6 +105,7 @@ export default function Home() {
       <section className="hello" id="hello">
         <div className="leaf" aria-hidden="true" />
         <p className="section-no">04 / Hello</p>
+        <p className="hello-note">Your goals are the beginning—not the boundary.</p>
         <h2>Bring the idea.<br /><em>We’ll find the way.</em></h2>
         <a href="mailto:hello@mertzhands.com">hello@mertzhands.com ↗</a>
       </section>
