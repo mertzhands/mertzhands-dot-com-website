@@ -14,24 +14,40 @@ export default function Home() {
       </header>
 
       <section className="hero" id="top">
-        <div className="sun" aria-hidden="true" />
-        <p className="overline">Independent creative practice · Chicago</p>
-        <h1>Thoughtful things,<br /><em>made well.</em></h1>
-        <div className="hero-bottom">
-          <p>
-            Helping singers, musicians, students, and creative people turn
-            their goals and ideas into work they are proud to share.
-          </p>
-          <a href="#practice" aria-label="Explore the practice">↓</a>
+        <div className="hero-copy">
+          <p className="overline">Independent creative practice · Chicago</p>
+          <h1>Thoughtful<br />things,<br /><em>made well.</em></h1>
+          <div className="hero-bottom">
+            <p>
+              Helping singers, musicians, students, and creative people turn
+              their goals and ideas into work they are proud to share.
+            </p>
+            <a href="#practice" aria-label="Explore the practice">↓</a>
+          </div>
         </div>
+        <div className="hero-room">
+          <img src="/og.png" alt="A walnut Scandinavian lounge chair in a warm, textured room" />
+          <span className="room-label">A space to listen · learn · make</span>
+          <i className="room-orb" aria-hidden="true" />
+        </div>
+      </section>
+
+      <section className="material-bar" aria-label="Working qualities">
+        <span>Listening</span><span>Clarity</span><span>Craft</span><span>Warmth</span><span>Growth</span>
       </section>
 
       <section className="welcome">
         <p className="section-no">01 / Welcome</p>
-        <blockquote>
-          “Your dream sets the direction. Together, we build the <em>skills,
-          confidence,</em> and clear next steps to bring it to life.”
-        </blockquote>
+        <div className="welcome-grid">
+          <blockquote>
+            “Your dream sets the direction. Together, we build the <em>skills,
+            confidence,</em> and clear next steps to bring it to life.”
+          </blockquote>
+          <aside className="listening-object">
+            <img src="/phonograph.jpg" alt="A red and cream mid-century phonograph" />
+            <span>Good work begins with attention.</span>
+          </aside>
+        </div>
         <div className="welcome-note">
           <span className="line" />
           <p>
@@ -47,19 +63,19 @@ export default function Home() {
           <h2>Ways I can help<br />you move forward</h2>
         </div>
         <div className="offerings">
-          <a href="mailto:hello@mertzhands.com?subject=Vocal%20instruction">
+          <a className="vocal" href="mailto:hello@mertzhands.com?subject=Vocal%20instruction">
             <span>01</span><h3>Vocal instruction</h3><p>Personalized coaching to build a healthy, expressive voice and the confidence to use it fully.</p><i>↗</i>
           </a>
-          <a href="mailto:hello@mertzhands.com?subject=Piano%20instruction">
+          <a className="piano" href="mailto:hello@mertzhands.com?subject=Piano%20instruction">
             <span>02</span><h3>Piano instruction</h3><p>Patient, practical lessons shaped around your level, musical interests, and personal goals.</p><i>↗</i>
           </a>
-          <a href="mailto:hello@mertzhands.com?subject=Music%20theory">
+          <a className="theory" href="mailto:hello@mertzhands.com?subject=Music%20theory">
             <span>03</span><h3>Music theory</h3><p>Clear, approachable instruction that connects the ideas on the page to the music you hear and make.</p><i>↗</i>
           </a>
-          <a href="mailto:hello@mertzhands.com?subject=Manuscript%20creation">
+          <a className="manuscript" href="mailto:hello@mertzhands.com?subject=Manuscript%20creation">
             <span>04</span><h3>Manuscript creation</h3><p>Careful preparation, notation, editing, and refinement that turns musical ideas into clear, usable scores.</p><i>↗</i>
           </a>
-          <a href="mailto:hello@mertzhands.com?subject=Music%20direction">
+          <a className="direction" href="mailto:hello@mertzhands.com?subject=Music%20direction">
             <span>05</span><h3>Music direction</h3><p>Support for rehearsals and performances that brings people together around a shared musical vision.</p><i>↗</i>
           </a>
         </div>
