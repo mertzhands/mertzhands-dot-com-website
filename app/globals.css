@@ -332,11 +332,15 @@ header {
 .offerings .theory { grid-column: span 4; background: #d8a65a; }
 .offerings .manuscript { grid-column: span 4; background: #d0a291; }
 .offerings .direction { grid-column: span 4; background: #a95b40; color: #f8f1e4; }
+.offerings .performance { grid-column: span 6; background: #7f896d; color: #f8f1e4; }
+.offerings .production { grid-column: span 6; background: #c88863; }
 .offerings .vocal::before { background: #a95b40; }
 .offerings .piano::before { background: #e9dfcd; border-radius: 100% 0; transform: rotate(25deg); }
 .offerings .theory::before { background: #6d7659; }
 .offerings .manuscript::before { background: #eadfca; border-radius: 100% 0; }
 .offerings .direction::before { background: #c99a4c; }
+.offerings .performance::before { background: #c99a4c; border-radius: 100% 0; transform: rotate(-20deg); }
+.offerings .production::before { background: #6d7659; }
 
 .offerings span {
   position: relative;
@@ -461,7 +465,9 @@ header {
   .offerings .piano,
   .offerings .theory,
   .offerings .manuscript,
-  .offerings .direction {
+  .offerings .direction,
+  .offerings .performance,
+  .offerings .production {
     grid-column: auto;
   }
 

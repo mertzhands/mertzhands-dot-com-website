@@ -77,6 +77,12 @@ export default function Home() {
           <a className="direction" href="mailto:hello@mertzhands.com?subject=Music%20direction">
             <span>05</span><h3>Music direction</h3><p>Support for rehearsals and performances that brings people together around a shared musical vision.</p><i>↗</i>
           </a>
+          <a className="performance" href="mailto:hello@mertzhands.com?subject=Live%20performance">
+            <span>06</span><h3>Live performance</h3><p>Thoughtful preparation and practical coaching to help you perform with confidence, presence, and musical freedom.</p><i>↗</i>
+          </a>
+          <a className="production" href="mailto:hello@mertzhands.com?subject=Audio%20production">
+            <span>07</span><h3>Audio production</h3><p>Creative, attentive production that shapes your sound and carries each musical idea clearly from session to finished recording.</p><i>↗</i>
+          </a>
         </div>
       </section>
 
