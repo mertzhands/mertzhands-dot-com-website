@@ -19,8 +19,8 @@ export default function Home() {
         <h1>Thoughtful things,<br /><em>made well.</em></h1>
         <div className="hero-bottom">
           <p>
-            Sound, stories, identities, and digital experiences—shaped with
-            curiosity, warmth, and a good pair of hands.
+            Helping singers, musicians, students, and creative people turn
+            their goals and ideas into work they are proud to share.
           </p>
           <a href="#practice" aria-label="Explore the practice">↓</a>
         </div>
@@ -29,32 +29,38 @@ export default function Home() {
       <section className="welcome">
         <p className="section-no">01 / Welcome</p>
         <blockquote>
-          “A small studio for making ideas feel <em>clearer, warmer,</em> and
-          more like themselves.”
+          “Your dream sets the direction. Together, we build the <em>skills,
+          confidence,</em> and clear next steps to bring it to life.”
         </blockquote>
         <div className="welcome-note">
           <span className="line" />
-          <p>I work closely with people who care deeply about what they’re putting into the world.</p>
+          <p>
+            Every student and client arrives with a different voice, purpose,
+            and possibility. The work begins by listening to yours.
+          </p>
         </div>
       </section>
 
       <section className="practice" id="practice">
         <div className="practice-head">
           <p className="section-no">02 / Practice</p>
-          <h2>What we might<br />make together</h2>
+          <h2>Ways I can help<br />you move forward</h2>
         </div>
         <div className="offerings">
-          <a href="mailto:hello@mertzhands.com?subject=Sound">
-            <span>01</span><h3>Sound & music</h3><p>Original music, production, sonic worlds, and identities you can hear.</p><i>↗</i>
+          <a href="mailto:hello@mertzhands.com?subject=Vocal%20instruction">
+            <span>01</span><h3>Vocal instruction</h3><p>Personalized coaching to build a healthy, expressive voice and the confidence to use it fully.</p><i>↗</i>
           </a>
-          <a href="mailto:hello@mertzhands.com?subject=Story">
-            <span>02</span><h3>Story & voice</h3><p>Narratives, writing, and editorial thinking that help the right idea come forward.</p><i>↗</i>
+          <a href="mailto:hello@mertzhands.com?subject=Piano%20instruction">
+            <span>02</span><h3>Piano instruction</h3><p>Patient, practical lessons shaped around your level, musical interests, and personal goals.</p><i>↗</i>
           </a>
-          <a href="mailto:hello@mertzhands.com?subject=Identity">
-            <span>03</span><h3>Identity & form</h3><p>Names, visual direction, and flexible systems with character and staying power.</p><i>↗</i>
+          <a href="mailto:hello@mertzhands.com?subject=Music%20theory">
+            <span>03</span><h3>Music theory</h3><p>Clear, approachable instruction that connects the ideas on the page to the music you hear and make.</p><i>↗</i>
           </a>
-          <a href="mailto:hello@mertzhands.com?subject=Digital">
-            <span>04</span><h3>Digital places</h3><p>Websites and useful tools that feel considered, intuitive, and genuinely human.</p><i>↗</i>
+          <a href="mailto:hello@mertzhands.com?subject=Manuscript%20creation">
+            <span>04</span><h3>Manuscript creation</h3><p>Careful preparation, notation, editing, and refinement that turns musical ideas into clear, usable scores.</p><i>↗</i>
+          </a>
+          <a href="mailto:hello@mertzhands.com?subject=Music%20direction">
+            <span>05</span><h3>Music direction</h3><p>Support for rehearsals and performances that brings people together around a shared musical vision.</p><i>↗</i>
           </a>
         </div>
       </section>
@@ -70,13 +76,13 @@ export default function Home() {
           <p className="section-no">03 / Process</p>
           <h2>Quietly curious.<br />Genuinely collaborative.</h2>
           <p className="intro">
-            We begin by paying attention. Then we find the essential thing,
-            give it a shape, and keep refining until it feels inevitable.
+            We begin with what you want to accomplish. Then we shape a path
+            around your strengths, your questions, and the way you learn best.
           </p>
           <ol>
-            <li><span>01</span><div><strong>Listen</strong><p>Make room for context, instinct, and what has not been said yet.</p></div></li>
-            <li><span>02</span><div><strong>Shape</strong><p>Turn loose ideas into a clear direction we can see and respond to.</p></div></li>
-            <li><span>03</span><div><strong>Make</strong><p>Build carefully, share early, and leave the work better than we found it.</p></div></li>
+            <li><span>01</span><div><strong>Listen</strong><p>Understand your dream, your experience, and what success would feel like to you.</p></div></li>
+            <li><span>02</span><div><strong>Plan</strong><p>Turn the goal into clear, encouraging steps with room to learn and discover.</p></div></li>
+            <li><span>03</span><div><strong>Grow</strong><p>Practice with purpose, respond to what we learn, and build lasting confidence together.</p></div></li>
           </ol>
         </div>
       </section>
@@ -84,7 +90,7 @@ export default function Home() {
       <section className="hello" id="hello">
         <div className="leaf" aria-hidden="true" />
         <p className="section-no">04 / Hello</p>
-        <h2>Let’s make something<br /><em>worth keeping.</em></h2>
+        <h2>Bring the idea.<br /><em>We’ll find the way.</em></h2>
         <a href="mailto:hello@mertzhands.com">hello@mertzhands.com ↗</a>
       </section>
 

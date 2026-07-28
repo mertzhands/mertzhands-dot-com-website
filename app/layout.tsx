@@ -3,13 +3,13 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mertz-hands-warm.mertzhands.chatgpt.site"),
-  title: "Mertz Hands — Thoughtful things, made well",
+  title: "Mertz Hands — Music instruction & creative direction",
   description:
-    "A warm independent creative practice for sound, stories, identity, and digital work.",
+    "Vocal and piano instruction, music theory, manuscript creation, and music direction shaped around your goals.",
   openGraph: {
     title: "Mertz Hands — Thoughtful things, made well",
     description:
-      "Sound, stories, identities, and digital experiences shaped with curiosity and warmth.",
+      "Vocal and piano instruction, music theory, manuscript creation, and music direction shaped around your goals.",
     type: "website",
     images: [{ url: "/og.png", width: 1536, height: 1024 }],
   },
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mertz Hands — Thoughtful things, made well",
     description:
-      "A warm independent creative practice for sound, stories, identity, and digital work.",
+      "Music instruction and creative direction shaped around your goals.",
     images: ["/og.png"],
   },
   icons: {
