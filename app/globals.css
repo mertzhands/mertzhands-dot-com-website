@@ -507,8 +507,21 @@ header {
 :root[data-theme="dark"] .offerings .production { background: #674432; }
 :root[data-theme="dark"] .offerings .audition { background: #5a4d39; }
 :root[data-theme="dark"] .offerings a::before { opacity: .55; }
-:root[data-theme="dark"] .process { background: #302319; }
+:root[data-theme="dark"] .process {
+  background: #302319;
+  color: #f3eadb;
+}
 :root[data-theme="dark"] .process::before { background-image: none; }
+:root[data-theme="dark"] .process .section-no,
+:root[data-theme="dark"] .process li > span,
+:root[data-theme="dark"] .process figcaption {
+  color: #dfcdb8;
+}
+:root[data-theme="dark"] .process .intro,
+:root[data-theme="dark"] .process li p {
+  color: #eee1d0;
+  opacity: 1;
+}
 :root[data-theme="dark"] .image-wrap {
   background: #b8aa94;
   box-shadow-color: #743b2b;
