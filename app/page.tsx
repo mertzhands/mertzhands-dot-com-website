@@ -77,8 +77,8 @@ export default function Home() {
           <div className="hero-bottom">
             <p>
               Helping students and working artists—from singers and
-              instrumentalists to actors—turn their goals and ideas into work
-              they are proud to share.
+              instrumentalists to actors and producers—turn their goals and
+              ideas into work they are proud to share.
             </p>
             <a href="#practice" aria-label="Explore the practice">↓</a>
           </div>
