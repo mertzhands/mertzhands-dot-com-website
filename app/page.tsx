@@ -92,7 +92,7 @@ export default function Home() {
 
           <details className="category-card performance">
             <summary>
-              <span className="category-number">02 / 01 offering</span>
+              <span className="category-number">02 / 03 offerings</span>
               <span className="category-title">Performance</span>
               <span className="category-description">Preparation that helps the work feel present, expressive, and fully alive.</span>
               <span className="category-toggle" aria-hidden="true">+</span>
@@ -100,6 +100,12 @@ export default function Home() {
             <div className="category-contents">
               <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Live%20performance">
                 <span>01</span><h3>Live performance</h3><p>Thoughtful preparation and practical coaching to help you perform with confidence, presence, and musical freedom.</p><i>↗</i>
+              </a>
+              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Live%20ensemble%20performance">
+                <span>02</span><h3>Live Ensemble Performance</h3><p>Collaborative coaching and musical leadership that help groups listen deeply, rehearse with clarity, and perform as one.</p><i>↗</i>
+              </a>
+              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Live%20accompaniment">
+                <span>03</span><h3>Live Accompaniment</h3><p>Responsive, dependable piano support for lessons, rehearsals, auditions, and performances.</p><i>↗</i>
               </a>
             </div>
           </details>
