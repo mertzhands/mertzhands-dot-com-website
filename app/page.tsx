@@ -198,7 +198,7 @@ export default function Home() {
           <div className="image-wrap">
             <img src="/phonograph.jpg" alt="A warm red and cream mid-century phonograph" />
           </div>
-          <figcaption>A good process should feel like listening.</figcaption>
+          <figcaption>A good process feels like breathing.</figcaption>
         </figure>
         <div className="process-copy">
           <p className="section-no">03 / Process</p>
