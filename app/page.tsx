@@ -61,7 +61,13 @@ export default function Home() {
                 />
                 <line x1="747" y1="662" x2="747" y2="568" stroke="#332e27" strokeWidth="3.2" strokeLinecap="round" opacity=".42" />
                 <line x1="747" y1="662" x2="747" y2="568" stroke="url(#pendulum-metal)" strokeWidth="1.8" strokeLinecap="round" />
-                <path d="M742.5 594.5 L751.5 594.5 L750 607.5 L744 607.5 Z" fill="url(#pendulum-metal)" stroke="#51493d" strokeWidth="1" />
+                <g className="metronome-weight">
+                  <path d="M742.5 594.5 L751.5 594.5 L750 607.5 L744 607.5 Z" fill="#6f675a" stroke="#3f3931" strokeWidth="1" />
+                  <path d="M744 595.3 L749.8 595.3 L749 606.7 L744.8 606.7 Z" fill="#b9ad99" />
+                  <path d="M745.1 595.7 L747.1 595.7 L746.7 606.3 L745.3 606.3 Z" fill="#eee3d1" opacity=".92" />
+                  <path d="M747.1 595.7 L749.3 595.7 L748.6 606.3 L746.7 606.3 Z" fill="#8c8273" opacity=".9" />
+                  <line x1="745.65" y1="596.2" x2="745.8" y2="605.7" stroke="#fff8e9" strokeWidth=".55" strokeLinecap="round" opacity=".82" />
+                </g>
               </g>
             </g>
           </svg>
