@@ -44,7 +44,7 @@ export default function Home() {
                 <stop offset="1" stopColor="#3b352c" />
               </linearGradient>
               <clipPath id="pendulum-behind-lip" clipPathUnits="userSpaceOnUse">
-                <rect x="700" y="540" width="94" height="106" />
+                <rect x="700" y="540" width="94" height="104" />
               </clipPath>
             </defs>
             <g clipPath="url(#pendulum-behind-lip)">
