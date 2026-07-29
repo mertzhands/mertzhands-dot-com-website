@@ -209,6 +209,7 @@ figcaption { margin-top: 1rem; font-family: Georgia, serif; font-style: italic; 
 
 .collaboration-ribbon {
   position: relative;
+  top: -15px;
   z-index: 1;
   width: calc(100% + 12vw);
   margin: 7vw -6vw -4vw;
@@ -240,8 +241,8 @@ figcaption { margin-top: 1rem; font-family: Georgia, serif; font-style: italic; 
 .collaboration-set {
   display: flex;
   align-items: center;
-  gap: clamp(2rem, 4.5vw, 5rem);
-  padding: 0 clamp(1rem, 2.25vw, 2.5rem);
+  gap: clamp(2.5rem, 5.5vw, 6.5rem);
+  padding: 0 clamp(1.25rem, 2.75vw, 3.25rem);
 }
 
 .collaboration-mark {
@@ -265,7 +266,7 @@ figcaption { margin-top: 1rem; font-family: Georgia, serif; font-style: italic; 
 }
 
 @keyframes collaboration-scroll {
-  to { transform: translateX(-50%); }
+  to { transform: translateX(-25%); }
 }
 
 footer { min-height: 88px; padding: 0 4vw; display: flex; align-items: center; justify-content: space-between; font-size: .65rem; text-transform: uppercase; letter-spacing: .12em; }
@@ -367,6 +368,16 @@ header {
   line-height: 1.2;
   max-width: 54rem;
   letter-spacing: -.025em;
+}
+
+.hero-separator {
+  display: inline-block;
+  margin-inline: .12em;
+  color: var(--terracotta);
+  font-family: Arial, sans-serif;
+  font-size: .52em;
+  line-height: 1;
+  vertical-align: .2em;
 }
 
 .welcome {

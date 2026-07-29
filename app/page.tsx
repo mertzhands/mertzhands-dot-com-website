@@ -85,9 +85,11 @@ export default function Home() {
           <p className="overline">Music instruction · Creative direction · Houston</p>
           <div className="hero-bottom">
             <p>
-              Collaborating with students and working artists—from singers and
-              instrumentalists to actors and producers—turning your goals and
-              ideas into work you can be proud to share.
+              Collaborating with students and working artists{" "}
+              <span className="hero-separator" aria-hidden="true">✦</span>{" "}
+              singers, instrumentalists, actors, and producers{" "}
+              <span className="hero-separator" aria-hidden="true">✦</span>{" "}
+              turning your goals and ideas into work you can be proud to share.
             </p>
             <a className="practice-jump" href="#practice" aria-label="Explore the practice">
               <span aria-hidden="true">+</span>
@@ -219,15 +221,15 @@ export default function Home() {
         <h2>Bring the idea.<br /><em>Together, we’ll bring it to life.</em></h2>
         <a href="mailto:hello@mertzhands.com">hello@mertzhands.com ↗</a>
         <div className="collaboration-ribbon">
-          <p>Prior collaborators include</p>
+          <p>Representative collaborators include</p>
           <div className="collaboration-window">
             <div className="collaboration-track">
-              {[0, 1].map((copy) => (
+              {[0, 1, 2, 3].map((copy) => (
                 <div
                   className="collaboration-set"
                   key={copy}
                   role={copy === 0 ? "list" : undefined}
-                  aria-hidden={copy === 1 ? "true" : undefined}
+                  aria-hidden={copy > 0 ? "true" : undefined}
                 >
                   {collaborationPlaceholders.map((collaboration) => (
                     <div
