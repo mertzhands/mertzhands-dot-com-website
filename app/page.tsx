@@ -21,7 +21,27 @@ export default function Home() {
       <section className="hero" id="top">
         <h1 className="sr-only">Mertz Hands — How may we help you?</h1>
         <div className="hero-poster">
-          <img src="/hero-piano-v7.png" alt="Mertz Hands — How may we help you? Beside an exposed-action upright piano, a wooden metronome, and pencils." />
+          <img src="/hero-piano-metronome-still.png" alt="Mertz Hands — How may we help you? Beside an exposed-action upright piano, a wooden metronome, and pencils." />
+          <svg
+            className="metronome-motion"
+            viewBox="0 0 1536 1024"
+            preserveAspectRatio="xMidYMid meet"
+            aria-hidden="true"
+          >
+            <defs>
+              <linearGradient id="pendulum-metal" x1="0" x2="1">
+                <stop offset="0" stopColor="#544b3e" />
+                <stop offset=".42" stopColor="#e2d5bd" />
+                <stop offset=".72" stopColor="#8e8371" />
+                <stop offset="1" stopColor="#3b352c" />
+              </linearGradient>
+            </defs>
+            <g className="metronome-arm">
+              <line x1="747" y1="662" x2="747" y2="586" stroke="#332e27" strokeWidth="3.2" strokeLinecap="round" opacity=".42" />
+              <line x1="747" y1="662" x2="747" y2="586" stroke="url(#pendulum-metal)" strokeWidth="1.8" strokeLinecap="round" />
+              <path d="M742.5 607.5 L751.5 607.5 L750 620.5 L744 620.5 Z" fill="url(#pendulum-metal)" stroke="#51493d" strokeWidth="1" />
+            </g>
+          </svg>
         </div>
         <div className="hero-intro">
           <p className="overline">Music instruction · Creative direction · Chicago</p>
