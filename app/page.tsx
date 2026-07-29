@@ -207,7 +207,7 @@ export default function Home() {
         <div className="leaf" aria-hidden="true" />
         <p className="section-no">04 / Hello</p>
         <p className="hello-note">Your goals are the beginning—not the boundary.</p>
-        <h2>Bring the idea.<br /><em>We’ll find the way.</em></h2>
+        <h2>Bring the idea.<br /><em>Together, we’ll bring it to life.</em></h2>
         <a href="mailto:hello@mertzhands.com">hello@mertzhands.com ↗</a>
       </section>
 
