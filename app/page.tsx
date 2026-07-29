@@ -92,7 +92,7 @@ export default function Home() {
 
           <details className="category-card performance">
             <summary>
-              <span className="category-number">02 / 03 offerings</span>
+              <span className="category-number">02 / 04 offerings</span>
               <span className="category-title">Performance</span>
               <span className="category-description">Preparation that helps the work feel present, expressive, and fully alive.</span>
               <span className="category-toggle" aria-hidden="true">+</span>
@@ -107,12 +107,15 @@ export default function Home() {
               <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Live%20accompaniment">
                 <span>03</span><h3>Live Accompaniment</h3><p>Responsive, dependable piano support for lessons, rehearsals, auditions, and performances.</p><i>↗</i>
               </a>
+              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Music%20direction">
+                <span>04</span><h3>Music direction</h3><p>Support for rehearsals and performances that brings people together around a shared musical vision.</p><i>↗</i>
+              </a>
             </div>
           </details>
 
           <details className="category-card creative-direction">
             <summary>
-              <span className="category-number">03 / 03 offerings</span>
+              <span className="category-number">03 / 02 offerings</span>
               <span className="category-title">Materials Preparation</span>
               <span className="category-description">Thoughtful structure and support to carry a musical idea into the world.</span>
               <span className="category-toggle" aria-hidden="true">+</span>
@@ -121,11 +124,8 @@ export default function Home() {
               <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Manuscript%20creation">
                 <span>01</span><h3>Manuscript creation</h3><p>Careful preparation, notation, editing, and refinement that turns musical ideas into clear, usable scores.</p><i>↗</i>
               </a>
-              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Music%20direction">
-                <span>02</span><h3>Music direction</h3><p>Support for rehearsals and performances that brings people together around a shared musical vision.</p><i>↗</i>
-              </a>
               <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Audio%20production">
-                <span>03</span><h3>Audio production</h3><p>Creative, attentive production that shapes your sound and carries each musical idea clearly from session to finished recording.</p><i>↗</i>
+                <span>02</span><h3>Audio production</h3><p>Creative, attentive production that shapes your sound and carries each musical idea clearly from session to finished recording.</p><i>↗</i>
               </a>
             </div>
           </details>
