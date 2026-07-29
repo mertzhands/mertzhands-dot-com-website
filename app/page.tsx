@@ -83,6 +83,9 @@ export default function Home() {
           <a className="production" href="mailto:hello@mertzhands.com?subject=Audio%20production">
             <span>07</span><h3>Audio production</h3><p>Creative, attentive production that shapes your sound and carries each musical idea clearly from session to finished recording.</p><i>↗</i>
           </a>
+          <a className="audition" href="mailto:hello@mertzhands.com?subject=Audition%20preparation">
+            <span>08</span><h3>Audition preparation</h3><p>Focused coaching to choose strong material, refine every detail, and enter the room prepared, confident, and fully yourself.</p><i>↗</i>
+          </a>
         </div>
       </section>
 
