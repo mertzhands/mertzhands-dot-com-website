@@ -93,7 +93,7 @@ export default function Home() {
           <details className="category-card creative-direction">
             <summary>
               <span className="category-number">02 / 03 offerings</span>
-              <span className="category-title">Creative direction</span>
+              <span className="category-title">Materials Preparation</span>
               <span className="category-description">Thoughtful structure and support to carry a musical idea into the world.</span>
               <span className="category-toggle" aria-hidden="true">+</span>
             </summary>
