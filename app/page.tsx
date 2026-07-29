@@ -1,3 +1,5 @@
+import ThemeToggle from "./ThemeToggle";
+
 export default function Home() {
   return (
     <main>
@@ -10,7 +12,10 @@ export default function Home() {
           <a href="#process">Process</a>
           <a href="#hello">Hello</a>
         </nav>
-        <a className="note-link" href="mailto:hello@mertzhands.com">Send a note ↗</a>
+        <div className="header-actions">
+          <ThemeToggle />
+          <a className="note-link" href="mailto:hello@mertzhands.com">Send a note ↗</a>
+        </div>
       </header>
 
       <section className="hero" id="top">

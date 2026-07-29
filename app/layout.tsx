@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import { Ripple } from "@/components/canvasui/Ripple";
 import "./globals.css";
-import RippleCanvas from "./RippleCanvas";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mertz-hands-warm.mertzhands.chatgpt.site"),
@@ -33,10 +33,29 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var saved=localStorage.getItem("mertzhands-theme");var theme=saved==="light"||saved==="dark"?saved:(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=theme;document.documentElement.style.colorScheme=theme}catch(e){}})()`,
+          }}
+        />
+      </head>
       <body>
-        {children}
-        <RippleCanvas />
+        <Ripple
+          className="canvas-ui-ripple-shell"
+          amplitude={0.7}
+          speed={0.58}
+          wavelength={72}
+          rings={4}
+          decay={0.85}
+          refraction={95}
+          dispersion={0.35}
+          shine={0.8}
+          trigger="click"
+        >
+          {children}
+        </Ripple>
       </body>
     </html>
   );
