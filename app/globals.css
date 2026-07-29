@@ -412,6 +412,157 @@ header {
   z-index: 1;
 }
 
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: 1.4rem;
+}
+
+.category-card {
+  position: relative;
+  border: 1px solid rgba(63, 43, 29, .3);
+  background: #d8c7aa;
+  color: #30271e;
+}
+
+.category-card::before {
+  content: "";
+  position: absolute;
+  width: 42%;
+  height: 12px;
+  left: -1px;
+  top: -12px;
+  border: 1px solid rgba(63, 43, 29, .3);
+  border-bottom: 0;
+  border-radius: 10px 20px 0 0;
+  background: inherit;
+}
+
+.category-card.creative-direction { background: #c99176; }
+.category-card.performance { background: #8f997d; }
+
+.category-card summary {
+  position: relative;
+  min-height: 410px;
+  padding: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  list-style: none;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.category-card summary::-webkit-details-marker { display: none; }
+.category-card summary::marker { content: ""; }
+.category-card summary:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 32px rgba(72, 47, 28, .14);
+}
+.category-card summary:focus-visible {
+  outline: 3px solid var(--clay);
+  outline-offset: 5px;
+}
+
+.category-number {
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.category-title {
+  margin: auto 0 1.4rem;
+  max-width: 90%;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.8rem, 4vw, 5rem);
+  line-height: .88;
+  letter-spacing: -.045em;
+}
+
+.category-description {
+  max-width: 25rem;
+  padding-right: 3rem;
+  line-height: 1.5;
+}
+
+.category-toggle {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1.45rem;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  transition: transform .3s ease, background .3s ease, color .3s ease;
+}
+
+.category-card[open] .category-toggle {
+  transform: rotate(45deg);
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.category-contents {
+  padding: 0 1.7rem 1.7rem;
+  animation: category-reveal .3s ease both;
+}
+
+.category-offering {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr) auto;
+  column-gap: .7rem;
+  padding: 1.25rem 2.5rem 1.25rem 0;
+  border-top: 1px solid currentColor;
+  color: inherit;
+  text-decoration: none;
+}
+
+.category-offering > span {
+  grid-row: 1 / span 2;
+  padding-top: .28rem;
+  font-size: .62rem;
+  letter-spacing: .12em;
+}
+
+.category-offering h3 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.65rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.category-offering p {
+  grid-column: 2 / 4;
+  margin: .75rem 0 0;
+  line-height: 1.45;
+}
+
+.category-offering i {
+  position: absolute;
+  top: 1.15rem;
+  right: .15rem;
+  font-style: normal;
+  transition: transform .2s ease;
+}
+
+.category-offering:hover i,
+.category-offering:focus-visible i { transform: translate(3px, -3px); }
+.category-offering:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+@keyframes category-reveal {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 .process {
   background: #553722;
   min-height: 850px;
@@ -507,6 +658,20 @@ header {
 :root[data-theme="dark"] .offerings .production { background: #674432; }
 :root[data-theme="dark"] .offerings .audition { background: #5a4d39; }
 :root[data-theme="dark"] .offerings a::before { opacity: .55; }
+:root[data-theme="dark"] .category-card {
+  color: #f2e8d7;
+  border-color: rgba(241, 231, 213, .22);
+  background: #4e4437;
+}
+:root[data-theme="dark"] .category-card::before {
+  border-color: rgba(241, 231, 213, .22);
+}
+:root[data-theme="dark"] .category-card.creative-direction { background: #633f34; }
+:root[data-theme="dark"] .category-card.performance { background: #3f493b; }
+:root[data-theme="dark"] .category-card[open] .category-toggle {
+  color: #251f19;
+  background: #f2e8d7;
+}
 :root[data-theme="dark"] .process {
   background: #302319;
   color: #f3eadb;
@@ -577,6 +742,14 @@ header {
   .offerings a {
     min-height: 290px;
   }
+
+  .category-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .category-card summary { min-height: 330px; }
+  .category-title { font-size: clamp(3rem, 14vw, 4.6rem); }
 
   .header-actions { gap: .65rem; }
   .note-link { font-size: .62rem; }

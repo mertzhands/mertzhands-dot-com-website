@@ -66,31 +66,63 @@ export default function Home() {
           <h2>Ways we can help<br />you move forward</h2>
         </div>
         <p className="catalogue-note">A considered practice for the whole musical person.</p>
-        <div className="offerings">
-          <a className="vocal" href="mailto:hello@mertzhands.com?subject=Vocal%20instruction">
-            <span>01</span><h3>Vocal instruction</h3><p>Personalized coaching to build a healthy, expressive voice and the confidence to use it fully.</p><i>↗</i>
-          </a>
-          <a className="piano" href="mailto:hello@mertzhands.com?subject=Piano%20instruction">
-            <span>02</span><h3>Piano instruction</h3><p>Patient, practical lessons shaped around your level, musical interests, and personal goals.</p><i>↗</i>
-          </a>
-          <a className="theory" href="mailto:hello@mertzhands.com?subject=Music%20theory">
-            <span>03</span><h3>Music<br />theory</h3><p>Clear, approachable instruction that connects the ideas on the page to the music you hear and make.</p><i>↗</i>
-          </a>
-          <a className="manuscript" href="mailto:hello@mertzhands.com?subject=Manuscript%20creation">
-            <span>04</span><h3>Manuscript creation</h3><p>Careful preparation, notation, editing, and refinement that turns musical ideas into clear, usable scores.</p><i>↗</i>
-          </a>
-          <a className="direction" href="mailto:hello@mertzhands.com?subject=Music%20direction">
-            <span>05</span><h3>Music direction</h3><p>Support for rehearsals and performances that brings people together around a shared musical vision.</p><i>↗</i>
-          </a>
-          <a className="performance" href="mailto:hello@mertzhands.com?subject=Live%20performance">
-            <span>06</span><h3>Live performance</h3><p>Thoughtful preparation and practical coaching to help you perform with confidence, presence, and musical freedom.</p><i>↗</i>
-          </a>
-          <a className="production" href="mailto:hello@mertzhands.com?subject=Audio%20production">
-            <span>07</span><h3>Audio production</h3><p>Creative, attentive production that shapes your sound and carries each musical idea clearly from session to finished recording.</p><i>↗</i>
-          </a>
-          <a className="audition" href="mailto:hello@mertzhands.com?subject=Audition%20preparation">
-            <span>08</span><h3>Audition preparation</h3><p>Focused coaching to choose strong material, refine every detail, and enter the room prepared, confident, and fully yourself.</p><i>↗</i>
-          </a>
+        <div className="category-grid">
+          <details className="category-card education">
+            <summary>
+              <span className="category-number">01 / 04 offerings</span>
+              <span className="category-title">Education</span>
+              <span className="category-description">Skills, understanding, and confidence built around the way you learn.</span>
+              <span className="category-toggle" aria-hidden="true">+</span>
+            </summary>
+            <div className="category-contents">
+              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Vocal%20instruction">
+                <span>01</span><h3>Vocal instruction</h3><p>Personalized coaching to build a healthy, expressive voice and the confidence to use it fully.</p><i>↗</i>
+              </a>
+              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Piano%20instruction">
+                <span>02</span><h3>Piano instruction</h3><p>Patient, practical lessons shaped around your level, musical interests, and personal goals.</p><i>↗</i>
+              </a>
+              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Music%20theory">
+                <span>03</span><h3>Music theory</h3><p>Clear, approachable instruction that connects the ideas on the page to the music you hear and make.</p><i>↗</i>
+              </a>
+              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Audition%20preparation">
+                <span>04</span><h3>Audition preparation</h3><p>Focused coaching to choose strong material, refine every detail, and enter the room prepared, confident, and fully yourself.</p><i>↗</i>
+              </a>
+            </div>
+          </details>
+
+          <details className="category-card creative-direction">
+            <summary>
+              <span className="category-number">02 / 03 offerings</span>
+              <span className="category-title">Creative direction</span>
+              <span className="category-description">Thoughtful structure and support to carry a musical idea into the world.</span>
+              <span className="category-toggle" aria-hidden="true">+</span>
+            </summary>
+            <div className="category-contents">
+              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Manuscript%20creation">
+                <span>01</span><h3>Manuscript creation</h3><p>Careful preparation, notation, editing, and refinement that turns musical ideas into clear, usable scores.</p><i>↗</i>
+              </a>
+              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Music%20direction">
+                <span>02</span><h3>Music direction</h3><p>Support for rehearsals and performances that brings people together around a shared musical vision.</p><i>↗</i>
+              </a>
+              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Audio%20production">
+                <span>03</span><h3>Audio production</h3><p>Creative, attentive production that shapes your sound and carries each musical idea clearly from session to finished recording.</p><i>↗</i>
+              </a>
+            </div>
+          </details>
+
+          <details className="category-card performance">
+            <summary>
+              <span className="category-number">03 / 01 offering</span>
+              <span className="category-title">Performance</span>
+              <span className="category-description">Preparation that helps the work feel present, expressive, and fully alive.</span>
+              <span className="category-toggle" aria-hidden="true">+</span>
+            </summary>
+            <div className="category-contents">
+              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Live%20performance">
+                <span>01</span><h3>Live performance</h3><p>Thoughtful preparation and practical coaching to help you perform with confidence, presence, and musical freedom.</p><i>↗</i>
+              </a>
+            </div>
+          </details>
         </div>
       </section>
 
