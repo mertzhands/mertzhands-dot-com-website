@@ -29,7 +29,15 @@ export default function Home() {
             aria-hidden="true"
           >
             <defs>
-              <linearGradient id="pendulum-metal" x1="0" x2="1">
+              <linearGradient
+                id="pendulum-metal"
+                gradientUnits="userSpaceOnUse"
+                x1="742"
+                y1="0"
+                x2="752"
+                y2="0"
+                colorInterpolation="sRGB"
+              >
                 <stop offset="0" stopColor="#544b3e" />
                 <stop offset=".42" stopColor="#e2d5bd" />
                 <stop offset=".72" stopColor="#8e8371" />
@@ -41,6 +49,16 @@ export default function Home() {
             </defs>
             <g clipPath="url(#pendulum-behind-lip)">
               <g className="metronome-arm">
+                <animateTransform
+                  attributeName="transform"
+                  type="rotate"
+                  values="-18 747 662; 18 747 662; -18 747 662"
+                  keyTimes="0; .5; 1"
+                  dur="2s"
+                  repeatCount="indefinite"
+                  calcMode="spline"
+                  keySplines=".45 .04 .55 .96; .45 .04 .55 .96"
+                />
                 <line x1="747" y1="662" x2="747" y2="568" stroke="#332e27" strokeWidth="3.2" strokeLinecap="round" opacity=".42" />
                 <line x1="747" y1="662" x2="747" y2="568" stroke="url(#pendulum-metal)" strokeWidth="1.8" strokeLinecap="round" />
                 <path d="M742.5 594.5 L751.5 594.5 L750 607.5 L744 607.5 Z" fill="url(#pendulum-metal)" stroke="#51493d" strokeWidth="1" />

@@ -250,15 +250,7 @@ header {
 }
 
 .metronome-arm {
-  transform-box: view-box;
-  transform-origin: 747px 662px;
-  animation: metronome-swing 1s cubic-bezier(.45, .04, .55, .96) infinite alternate;
   will-change: transform;
-}
-
-@keyframes metronome-swing {
-  from { transform: rotate(-18deg); }
-  to { transform: rotate(18deg); }
 }
 
 .hero-intro {
@@ -755,7 +747,6 @@ header {
 
 @media (prefers-reduced-motion: reduce) {
   .metronome-arm {
-    animation: none;
-    transform: rotate(0);
+    transform: rotate(0deg) !important;
   }
 }
