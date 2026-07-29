@@ -85,7 +85,8 @@ export default function Home() {
           <p className="overline">Music instruction · Creative direction · Houston</p>
           <div className="hero-bottom">
             <p>
-              Collaborating with students and working artists{" "}
+              Collaborating with students and working artists
+              <br className="hero-line-break" />
               <span className="hero-separator" aria-hidden="true">✦</span>{" "}
               singers, instrumentalists, actors, and producers{" "}
               <span className="hero-separator" aria-hidden="true">✦</span>{" "}

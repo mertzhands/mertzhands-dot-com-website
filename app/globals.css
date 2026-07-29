@@ -380,6 +380,10 @@ header {
   vertical-align: .2em;
 }
 
+.hero-line-break {
+  display: block;
+}
+
 .welcome {
   padding-top: 10vw;
   background-color: #eee5d5;
@@ -800,6 +804,10 @@ header {
 }
 
 @media (max-width: 760px) {
+  .hero-line-break {
+    display: none;
+  }
+
   .hero-intro {
     min-height: auto;
     grid-template-columns: 1fr;
