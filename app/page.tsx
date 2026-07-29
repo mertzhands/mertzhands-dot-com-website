@@ -76,16 +76,16 @@ export default function Home() {
             </summary>
             <div className="category-contents">
               <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Vocal%20instruction">
-                <span>01</span><h3>Vocal instruction</h3><p>Personalized coaching to build a healthy, expressive voice and the confidence to use it fully.</p><i>↗</i>
+                <span>01</span><h3>Vocal Instruction</h3><p>Personalized coaching to build a healthy, expressive voice and the confidence to use it fully.</p><i>↗</i>
               </a>
               <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Audition%20preparation">
-                <span>02</span><h3>Audition preparation</h3><p>Focused coaching to choose strong material, refine every detail, and enter the room prepared, confident, and fully yourself.</p><i>↗</i>
+                <span>02</span><h3>Audition Preparation</h3><p>Focused coaching to choose strong material, refine every detail, and enter the room prepared, confident, and fully yourself.</p><i>↗</i>
               </a>
               <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Music%20theory">
-                <span>03</span><h3>Music theory</h3><p>Clear, approachable instruction that connects the ideas on the page to the music you hear and make.</p><i>↗</i>
+                <span>03</span><h3>Music Theory</h3><p>Clear, approachable instruction that connects the ideas on the page to the music you hear and make.</p><i>↗</i>
               </a>
               <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Piano%20instruction">
-                <span>04</span><h3>Piano instruction</h3><p>Patient, practical lessons shaped around your level, musical interests, and personal goals.</p><i>↗</i>
+                <span>04</span><h3>Piano Instruction</h3><p>Patient, practical lessons shaped around your level, musical interests, and personal goals.</p><i>↗</i>
               </a>
             </div>
           </details>
@@ -108,7 +108,7 @@ export default function Home() {
                 <span>03</span><h3>Live Accompaniment</h3><p>Responsive, dependable piano support for lessons, rehearsals, auditions, and performances.</p><i>↗</i>
               </a>
               <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Music%20direction">
-                <span>04</span><h3>Music direction</h3><p>Support for rehearsals and performances that brings people together around a shared musical vision.</p><i>↗</i>
+                <span>04</span><h3>Music Direction</h3><p>Support for rehearsals and performances that brings people together around a shared musical vision.</p><i>↗</i>
               </a>
             </div>
           </details>
@@ -122,10 +122,10 @@ export default function Home() {
             </summary>
             <div className="category-contents">
               <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Manuscript%20creation">
-                <span>01</span><h3>Manuscript creation</h3><p>Careful preparation, notation, editing, and refinement that turns musical ideas into clear, usable scores.</p><i>↗</i>
+                <span>01</span><h3>Manuscript Creation</h3><p>Careful preparation, notation, editing, and refinement that turns musical ideas into clear, usable scores.</p><i>↗</i>
               </a>
               <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Audio%20production">
-                <span>02</span><h3>Audio production</h3><p>Creative, attentive production that shapes your sound and carries each musical idea clearly from session to finished recording.</p><i>↗</i>
+                <span>02</span><h3>Audio Production</h3><p>Creative, attentive production that shapes your sound and carries each musical idea clearly from session to finished recording.</p><i>↗</i>
               </a>
             </div>
           </details>
