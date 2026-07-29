@@ -90,9 +90,23 @@ export default function Home() {
             </div>
           </details>
 
+          <details className="category-card performance">
+            <summary>
+              <span className="category-number">02 / 01 offering</span>
+              <span className="category-title">Performance</span>
+              <span className="category-description">Preparation that helps the work feel present, expressive, and fully alive.</span>
+              <span className="category-toggle" aria-hidden="true">+</span>
+            </summary>
+            <div className="category-contents">
+              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Live%20performance">
+                <span>01</span><h3>Live performance</h3><p>Thoughtful preparation and practical coaching to help you perform with confidence, presence, and musical freedom.</p><i>↗</i>
+              </a>
+            </div>
+          </details>
+
           <details className="category-card creative-direction">
             <summary>
-              <span className="category-number">02 / 03 offerings</span>
+              <span className="category-number">03 / 03 offerings</span>
               <span className="category-title">Materials Preparation</span>
               <span className="category-description">Thoughtful structure and support to carry a musical idea into the world.</span>
               <span className="category-toggle" aria-hidden="true">+</span>
@@ -110,19 +124,6 @@ export default function Home() {
             </div>
           </details>
 
-          <details className="category-card performance">
-            <summary>
-              <span className="category-number">03 / 01 offering</span>
-              <span className="category-title">Performance</span>
-              <span className="category-description">Preparation that helps the work feel present, expressive, and fully alive.</span>
-              <span className="category-toggle" aria-hidden="true">+</span>
-            </summary>
-            <div className="category-contents">
-              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Live%20performance">
-                <span>01</span><h3>Live performance</h3><p>Thoughtful preparation and practical coaching to help you perform with confidence, presence, and musical freedom.</p><i>↗</i>
-              </a>
-            </div>
-          </details>
         </div>
       </section>
 
