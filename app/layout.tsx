@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import RippleCanvas from "./RippleCanvas";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mertz-hands-warm.mertzhands.chatgpt.site"),
@@ -33,7 +34,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <RippleCanvas />
+      </body>
     </html>
   );
 }
