@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <main>
       <header>
-        <a className="mark" href="#top" aria-label="Mertz Hands home">
-          <span>m</span> mertz hands
+        <a className="mark" href="#top" aria-label="MertzHands home">
+          <span>m</span> MertzHands
         </a>
         <nav aria-label="Main navigation">
           <a href="#practice">Practice</a>
