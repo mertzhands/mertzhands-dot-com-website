@@ -108,8 +108,11 @@ nav a:hover { color: var(--clay); }
 
 .welcome { padding: 9vw 6vw; background: #e5d8c2; position: relative; overflow: hidden; }
 .welcome::before {
-  content: ""; position: absolute; width: 30vw; height: 30vw; border: 1px solid rgba(40,42,33,.22);
+  content: ""; position: absolute; width: 30vw; height: 30vw;
+  border: 0;
   border-radius: 50%; left: -15vw; top: 12%;
+  background: rgba(185, 79, 53, .07);
+  pointer-events: none;
 }
 .welcome-grid { display: grid; grid-template-columns: 1fr 26vw; gap: 7vw; align-items: end; }
 .welcome blockquote {
@@ -621,6 +624,9 @@ header {
 :root[data-theme="dark"] .welcome {
   background-color: #20211c;
   background-image: none;
+}
+:root[data-theme="dark"] .welcome::before {
+  background: rgba(216, 121, 92, .09);
 }
 :root[data-theme="dark"] .welcome blockquote { color: #f0dbc4; }
 :root[data-theme="dark"] .listening-object {
