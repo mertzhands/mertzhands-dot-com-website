@@ -25,7 +25,7 @@ a { color: inherit; }
   inset: 0;
   z-index: 9999;
   pointer-events: none;
-  mix-blend-mode: soft-light;
+  opacity: .92;
 }
 
 @media (prefers-reduced-motion: reduce) {
