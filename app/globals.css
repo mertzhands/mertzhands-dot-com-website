@@ -77,7 +77,8 @@ nav a:hover { color: var(--clay); }
 :root[data-theme="dark"] .theme-toggle-track { background: rgba(216, 121, 92, .3); }
 :root[data-theme="dark"] .theme-toggle-thumb { transform: translateX(15px); }
 :root[data-theme="dark"] .theme-toggle-sun { opacity: .5; }
-:root[data-theme="dark"] .theme-toggle-moon { opacity: 1; }
+:root[data-theme="dark"] .theme-toggle-moon { color: #c8bba6; opacity: 1; }
+:root[data-theme="dark"] .theme-toggle-moon svg { stroke-width: 1.75; }
 
 .hero {
   min-height: calc(100svh - 82px); padding: 2.2vw; display: grid;
