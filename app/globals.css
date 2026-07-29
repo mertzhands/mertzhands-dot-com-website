@@ -252,13 +252,13 @@ header {
 .metronome-arm {
   transform-box: view-box;
   transform-origin: 747px 662px;
-  animation: metronome-swing 2.8s cubic-bezier(.45, .04, .55, .96) infinite alternate;
+  animation: metronome-swing 1s cubic-bezier(.45, .04, .55, .96) infinite alternate;
   will-change: transform;
 }
 
 @keyframes metronome-swing {
-  from { transform: rotate(-2.4deg); }
-  to { transform: rotate(2.4deg); }
+  from { transform: rotate(-18deg); }
+  to { transform: rotate(18deg); }
 }
 
 .hero-intro {

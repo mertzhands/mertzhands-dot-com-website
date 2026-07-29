@@ -37,9 +37,9 @@ export default function Home() {
               </linearGradient>
             </defs>
             <g className="metronome-arm">
-              <line x1="747" y1="662" x2="747" y2="586" stroke="#332e27" strokeWidth="3.2" strokeLinecap="round" opacity=".42" />
-              <line x1="747" y1="662" x2="747" y2="586" stroke="url(#pendulum-metal)" strokeWidth="1.8" strokeLinecap="round" />
-              <path d="M742.5 607.5 L751.5 607.5 L750 620.5 L744 620.5 Z" fill="url(#pendulum-metal)" stroke="#51493d" strokeWidth="1" />
+              <line x1="747" y1="662" x2="747" y2="568" stroke="#332e27" strokeWidth="3.2" strokeLinecap="round" opacity=".42" />
+              <line x1="747" y1="662" x2="747" y2="568" stroke="url(#pendulum-metal)" strokeWidth="1.8" strokeLinecap="round" />
+              <path d="M742.5 600.5 L751.5 600.5 L750 613.5 L744 613.5 Z" fill="url(#pendulum-metal)" stroke="#51493d" strokeWidth="1" />
             </g>
           </svg>
         </div>
