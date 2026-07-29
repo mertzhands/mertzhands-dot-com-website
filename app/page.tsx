@@ -14,7 +14,7 @@ export default function Home() {
     <main>
       <header>
         <a className="mark" href="#top" aria-label="MertzHands home">
-          <span>m</span> MertzHands
+          <span>M</span> MertzHands
         </a>
         <nav aria-label="Main navigation">
           <a href="#practice">Practice</a>
