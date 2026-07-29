@@ -193,6 +193,7 @@ nav a:hover { color: var(--clay); }
 .image-wrap { background: #dfd3bd; padding: 8%; border-radius: 48% 48% 3rem 3rem; overflow: hidden; box-shadow: 24px 24px 0 rgba(40,42,33,.26); }
 .image-wrap img { width: 100%; display: block; aspect-ratio: .9; object-fit: cover; object-position: top; mix-blend-mode: multiply; }
 figcaption { margin-top: 1rem; font-family: Georgia, serif; font-style: italic; font-size: 1.1rem; }
+.process figcaption { margin-top: calc(1rem + 15px); }
 .process h2 { margin: 3vw 0; }
 .process .intro { max-width: 37rem; font-size: 1.15rem; line-height: 1.55; }
 .process ol { list-style: none; padding: 0; margin: 4vw 0 0; }
