@@ -106,19 +106,6 @@ nav a:hover { color: var(--clay); }
 }
 .room-orb { position: absolute; width: 84px; height: 84px; border-radius: 50%; background: var(--ochre); top: 2rem; right: 2rem; box-shadow: 0 0 0 12px rgba(242,236,223,.45); }
 
-.material-bar {
-  display: grid; grid-template-columns: repeat(5, 1fr); border-block: 1px solid var(--ink);
-  background: #dccfb8;
-}
-.material-bar span {
-  min-height: 76px; display: grid; place-items: center; border-right: 1px solid var(--line);
-  font-family: Georgia, serif; font-style: italic; font-size: 1.08rem;
-}
-.material-bar span:nth-child(2) { background: var(--ochre); }
-.material-bar span:nth-child(3) { background: var(--moss); color: var(--paper); }
-.material-bar span:nth-child(4) { background: var(--rose); }
-.material-bar span:last-child { border: 0; background: var(--clay); color: var(--paper); }
-
 .welcome { padding: 9vw 6vw; background: #e5d8c2; position: relative; overflow: hidden; }
 .welcome::before {
   content: ""; position: absolute; width: 30vw; height: 30vw; border: 1px solid rgba(40,42,33,.22);
@@ -201,8 +188,6 @@ footer a { text-decoration: none; }
   .hero-room { min-height: 72svh; border-radius: 8rem 3px 3px 3px; }
   .hero-room img { object-position: 72% center; }
   .room-label { left: 1rem; bottom: 1rem; }
-  .material-bar { grid-template-columns: 1fr; }
-  .material-bar span { min-height: 56px; border-right: 0; border-bottom: 1px solid var(--line); }
   .welcome { padding: 6rem 1.25rem; }
   .welcome-grid { grid-template-columns: 1fr; }
   .listening-object { width: 72%; margin-left: auto; }
@@ -276,16 +261,6 @@ header {
   line-height: 1.2;
   max-width: 54rem;
   letter-spacing: -.025em;
-}
-
-.material-bar {
-  background: #e9dfcd;
-}
-
-.material-bar span {
-  min-height: 88px;
-  text-transform: lowercase;
-  font-size: 1.25rem;
 }
 
 .welcome {
@@ -627,9 +602,6 @@ header {
   filter: brightness(.72) saturate(.78) contrast(1.06);
 }
 :root[data-theme="dark"] .hero-intro { background: #24241e; }
-:root[data-theme="dark"] .material-bar { background: #2c2c24; }
-:root[data-theme="dark"] .material-bar span:nth-child(2),
-:root[data-theme="dark"] .material-bar span:nth-child(4) { color: #211d16; }
 :root[data-theme="dark"] .welcome {
   background-color: #20211c;
   background-image: none;
@@ -706,14 +678,6 @@ header {
 
   .hero-intro .hero-bottom p {
     font-size: 1.45rem;
-  }
-
-  .material-bar {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .material-bar span:last-child {
-    grid-column: span 2;
   }
 
   .welcome-grid {

@@ -35,10 +35,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="material-bar" aria-label="Working qualities">
-        <span>Listening</span><span>Clarity</span><span>Craft</span><span>Warmth</span><span>Growth</span>
-      </section>
-
       <section className="welcome">
         <p className="section-no">01 / Welcome</p>
         <div className="welcome-grid">
