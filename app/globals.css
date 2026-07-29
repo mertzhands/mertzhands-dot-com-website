@@ -207,6 +207,67 @@ figcaption { margin-top: 1rem; font-family: Georgia, serif; font-style: italic; 
 .leaf { position: absolute; width: 33vw; height: 45vw; max-height: 560px; background: var(--rose); border-radius: 100% 0; right: -5vw; top: 10%; transform: rotate(-18deg); }
 .leaf::after { content: ""; position: absolute; width: 1px; height: 80%; background: var(--ink); transform: rotate(40deg); left: 45%; top: 22%; }
 
+.collaboration-ribbon {
+  position: relative;
+  z-index: 1;
+  width: calc(100% + 12vw);
+  margin: 7vw -6vw -4vw;
+  padding: 1.35rem 0 1.5rem;
+  border-block: 1px solid var(--line);
+  background: rgba(242, 236, 223, .3);
+}
+
+.collaboration-ribbon > p {
+  margin: 0 6vw 1.2rem;
+  font-size: .64rem;
+  font-weight: 700;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+.collaboration-window {
+  width: 100%;
+  overflow: hidden;
+}
+
+.collaboration-track {
+  width: max-content;
+  display: flex;
+  animation: collaboration-scroll 48s linear infinite;
+  will-change: transform;
+}
+
+.collaboration-set {
+  display: flex;
+  align-items: center;
+  gap: clamp(2rem, 4.5vw, 5rem);
+  padding: 0 clamp(1rem, 2.25vw, 2.5rem);
+}
+
+.collaboration-mark {
+  width: clamp(62px, 6vw, 88px);
+  aspect-ratio: 1;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(40, 42, 33, .32);
+  border-radius: 50%;
+  background: rgba(242, 236, 223, .58);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: .78rem;
+  font-style: italic;
+  letter-spacing: .08em;
+}
+
+.collaboration-ribbon:hover .collaboration-track,
+.collaboration-ribbon:focus-within .collaboration-track {
+  animation-play-state: paused;
+}
+
+@keyframes collaboration-scroll {
+  to { transform: translateX(-50%); }
+}
+
 footer { min-height: 88px; padding: 0 4vw; display: flex; align-items: center; justify-content: space-between; font-size: .65rem; text-transform: uppercase; letter-spacing: .12em; }
 footer a { text-decoration: none; }
 
@@ -719,6 +780,13 @@ header {
 }
 :root[data-theme="dark"] .hello { background: #25251f; }
 :root[data-theme="dark"] .leaf { background: #58624f; }
+:root[data-theme="dark"] .collaboration-ribbon {
+  background: rgba(15, 16, 13, .22);
+}
+:root[data-theme="dark"] .collaboration-mark {
+  border-color: rgba(241, 231, 213, .28);
+  background: rgba(241, 231, 213, .08);
+}
 
 @media (max-width: 760px) {
   .hero-intro {
@@ -778,10 +846,28 @@ header {
   .hello {
     min-height: 620px;
   }
+
+  .collaboration-ribbon {
+    width: calc(100% + 12vw);
+    margin-top: 5rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .metronome-arm {
     transform: rotate(0deg) !important;
+  }
+
+  .collaboration-track {
+    animation: none;
+  }
+
+  .collaboration-set[aria-hidden="true"] {
+    display: none;
+  }
+
+  .collaboration-window {
+    overflow-x: auto;
+    scrollbar-width: thin;
   }
 }

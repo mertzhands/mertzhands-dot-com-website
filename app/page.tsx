@@ -1,5 +1,14 @@
 import ThemeToggle from "./ThemeToggle";
 
+const collaborationPlaceholders = [
+  { id: "01", label: "Collaboration placeholder 01" },
+  { id: "02", label: "Collaboration placeholder 02" },
+  { id: "03", label: "Collaboration placeholder 03" },
+  { id: "04", label: "Collaboration placeholder 04" },
+  { id: "05", label: "Collaboration placeholder 05" },
+  { id: "06", label: "Collaboration placeholder 06" },
+];
+
 export default function Home() {
   return (
     <main>
@@ -209,6 +218,32 @@ export default function Home() {
         <p className="hello-note">Your goals are the beginning—not the boundary.</p>
         <h2>Bring the idea.<br /><em>Together, we’ll bring it to life.</em></h2>
         <a href="mailto:hello@mertzhands.com">hello@mertzhands.com ↗</a>
+        <div className="collaboration-ribbon">
+          <p>Prior collaborators include</p>
+          <div className="collaboration-window">
+            <div className="collaboration-track">
+              {[0, 1].map((copy) => (
+                <div
+                  className="collaboration-set"
+                  key={copy}
+                  role={copy === 0 ? "list" : undefined}
+                  aria-hidden={copy === 1 ? "true" : undefined}
+                >
+                  {collaborationPlaceholders.map((collaboration) => (
+                    <div
+                      className="collaboration-mark"
+                      role={copy === 0 ? "listitem" : undefined}
+                      aria-label={copy === 0 ? collaboration.label : undefined}
+                      key={`${copy}-${collaboration.id}`}
+                    >
+                      <span aria-hidden="true">{collaboration.id}</span>
+                    </div>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </section>
 
       <footer>
