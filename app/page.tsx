@@ -80,7 +80,9 @@ export default function Home() {
               instrumentalists to actors and producers—turning your goals and
               ideas into work you can be proud to share.
             </p>
-            <a href="#practice" aria-label="Explore the practice">↓</a>
+            <a className="practice-jump" href="#practice" aria-label="Explore the practice">
+              <span aria-hidden="true">+</span>
+            </a>
           </div>
         </div>
       </section>
