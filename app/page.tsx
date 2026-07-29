@@ -58,7 +58,7 @@ export default function Home() {
       <section className="practice" id="practice">
         <div className="practice-head">
           <p className="section-no">02 / Practice</p>
-          <h2>Ways I can help<br />you move forward</h2>
+          <h2>Ways we can help<br />you move forward</h2>
         </div>
         <p className="catalogue-note">A considered practice for the whole musical person.</p>
         <div className="offerings">
