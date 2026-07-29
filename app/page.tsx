@@ -76,8 +76,9 @@ export default function Home() {
           <p className="overline">Music instruction · Creative direction · Chicago</p>
           <div className="hero-bottom">
             <p>
-              Helping singers, musicians, students, and creative people turn
-              their goals and ideas into work they are proud to share.
+              Helping students and working artists—from singers and
+              instrumentalists to actors—turn their goals and ideas into work
+              they are proud to share.
             </p>
             <a href="#practice" aria-label="Explore the practice">↓</a>
           </div>
