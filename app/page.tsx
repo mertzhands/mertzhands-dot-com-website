@@ -73,12 +73,12 @@ export default function Home() {
           </svg>
         </div>
         <div className="hero-intro">
-          <p className="overline">Music instruction · Creative direction · Chicago</p>
+          <p className="overline">Music instruction · Creative direction · Houston</p>
           <div className="hero-bottom">
             <p>
               Collaborating with students and working artists—from singers and
-              instrumentalists to actors and producers—as they turn their goals
-              and ideas into work they are proud to share.
+              instrumentalists to actors and producers—turning your goals and
+              ideas into work you can be proud to share.
             </p>
             <a href="#practice" aria-label="Explore the practice">↓</a>
           </div>
@@ -211,7 +211,7 @@ export default function Home() {
 
       <footer>
         <span>© 2026 Mertz Hands</span>
-        <span>Made thoughtfully in Chicago</span>
+        <span>Made thoughtfully in Houston</span>
         <a href="#top">Back to top ↑</a>
       </footer>
     </main>
