@@ -96,6 +96,7 @@ nav a:hover { color: var(--clay); }
 }
 .hero h1 em, blockquote em, .hello h2 em { font-weight: 400; color: var(--clay); }
 .quote-accent { color: var(--clay); }
+.quote-continuation { position: relative; top: 3px; }
 .hero-bottom { display: flex; justify-content: space-between; align-items: end; border-top: 1px solid var(--line); padding-top: 1.25rem; }
 .hero-bottom p { max-width: 33rem; margin: 0; font-size: 1.1rem; line-height: 1.5; }
 .hero-bottom .practice-jump {

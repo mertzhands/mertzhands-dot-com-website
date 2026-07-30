@@ -114,8 +114,8 @@ export default function Home() {
         <p className="section-no">01 / Welcome</p>
         <div className="welcome-grid">
           <blockquote>
-            “Your dream sets the direction. Together, we build the <em>skills,
-            confidence,</em> and <span className="quote-accent">clear next steps</span> to bring it to life.”
+            “Your dream sets the direction. <span className="quote-continuation">Together, we build the <em>skills,
+            confidence,</em> and <span className="quote-accent">clear next steps</span> to bring it to life.”</span>
           </blockquote>
           <aside className="listening-object">
             <img src="/phonograph.jpg" alt="A red and cream mid-century phonograph" />
