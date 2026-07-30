@@ -152,7 +152,7 @@ nav a:hover { color: var(--clay); }
 }
 .welcome-grid { display: grid; grid-template-columns: 1fr 26vw; gap: 7vw; align-items: end; }
 .welcome blockquote {
-  font-family: Georgia, serif; font-size: clamp(3rem, 5.8vw, 6.5rem); line-height: 1.01;
+  font-family: Georgia, serif; font-size: clamp(3rem, 5.8vw, 6.5rem); line-height: 1.08;
   letter-spacing: -.05em; margin: 6vw 0 4vw; max-width: 70rem; position: relative;
 }
 .listening-object {
