@@ -34,7 +34,7 @@ export default function Home() {
         </nav>
         <div className="header-actions">
           <ThemeToggle />
-          <a className="note-link" href="mailto:hello@mertzhands.com">Send a note ↗</a>
+          <a className="note-link" href="mailto:hello@mertzhands.com">Send a note <EmailIcon /></a>
         </div>
       </header>
 

@@ -48,7 +48,8 @@ header {
 nav { display: flex; gap: 2.5rem; }
 nav a, .note-link { font-size: .7rem; text-transform: uppercase; letter-spacing: .12em; text-decoration: none; font-weight: 700; }
 nav a:hover { color: var(--clay); }
-.note-link { justify-self: end; border-bottom: 1px solid; padding-bottom: .35rem; }
+.note-link { justify-self: end; display: inline-flex; align-items: center; gap: .42rem; border-bottom: 1px solid; padding-bottom: .35rem; }
+.note-link .email-icon { width: 1rem; height: .8rem; display: block; }
 
 .theme-toggle {
   display: inline-flex; align-items: center; gap: .38rem; padding: .28rem;
@@ -656,7 +657,7 @@ header {
   transition: transform .2s ease;
 }
 
-.category-offering .email-icon svg {
+.email-icon svg {
   width: 100%;
   height: 100%;
   display: block;
