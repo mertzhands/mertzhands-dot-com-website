@@ -9,6 +9,17 @@ const collaborationPlaceholders = [
   { id: "06", label: "Collaboration placeholder 06" },
 ];
 
+function EmailIcon() {
+  return (
+    <span className="email-icon" aria-hidden="true">
+      <svg viewBox="0 0 20 16" focusable="false">
+        <rect x="1" y="1" width="18" height="14" rx="1.5" />
+        <path d="m2 2 8 6 8-6" />
+      </svg>
+    </span>
+  );
+}
+
 export default function Home() {
   return (
     <main>
@@ -135,17 +146,17 @@ export default function Home() {
               <span className="category-toggle" aria-hidden="true">+</span>
             </summary>
             <div className="category-contents">
-              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Vocal%20instruction">
-                <span>01</span><h3>Vocal Instruction</h3><p>Personalized coaching to build a healthy, expressive voice and the confidence to use it fully.</p><i>↗</i>
+              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Vocal%20instruction" aria-label="Email about Vocal Instruction">
+                <span>01</span><h3>Vocal Instruction</h3><p>Personalized coaching to build a healthy, expressive voice and the confidence to use it fully.</p><EmailIcon />
               </a>
-              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Audition%20preparation">
-                <span>02</span><h3>Audition Preparation</h3><p>Focused coaching to choose strong material, refine every detail, and enter the room prepared, confident, and fully yourself.</p><i>↗</i>
+              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Audition%20preparation" aria-label="Email about Audition Preparation">
+                <span>02</span><h3>Audition Preparation</h3><p>Focused coaching to choose strong material, refine every detail, and enter the room prepared, confident, and fully yourself.</p><EmailIcon />
               </a>
-              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Music%20theory">
-                <span>03</span><h3>Music Theory</h3><p>Clear, approachable instruction that connects the ideas on the page to the music you hear and make.</p><i>↗</i>
+              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Music%20theory" aria-label="Email about Music Theory">
+                <span>03</span><h3>Music Theory</h3><p>Clear, approachable instruction that connects the ideas on the page to the music you hear and make.</p><EmailIcon />
               </a>
-              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Piano%20instruction">
-                <span>04</span><h3>Piano Instruction</h3><p>Patient, practical lessons shaped around your level, musical interests, and personal goals.</p><i>↗</i>
+              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Piano%20instruction" aria-label="Email about Piano Instruction">
+                <span>04</span><h3>Piano Instruction</h3><p>Patient, practical lessons shaped around your level, musical interests, and personal goals.</p><EmailIcon />
               </a>
             </div>
           </details>
@@ -158,17 +169,17 @@ export default function Home() {
               <span className="category-toggle" aria-hidden="true">+</span>
             </summary>
             <div className="category-contents">
-              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Live%20performance">
-                <span>01</span><h3>Live Solo Performance</h3><p>Thoughtful preparation and practical coaching to help you perform with confidence, presence, and musical freedom.</p><i>↗</i>
+              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Live%20performance" aria-label="Email about Live Solo Performance">
+                <span>01</span><h3>Live Solo Performance</h3><p>Thoughtful preparation and practical coaching to help you perform with confidence, presence, and musical freedom.</p><EmailIcon />
               </a>
-              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Live%20ensemble%20performance">
-                <span>02</span><h3>Live Ensemble Performance</h3><p>Collaborative coaching and musical leadership that help groups listen deeply, rehearse with clarity, and perform as one.</p><i>↗</i>
+              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Live%20ensemble%20performance" aria-label="Email about Live Ensemble Performance">
+                <span>02</span><h3>Live Ensemble Performance</h3><p>Collaborative coaching and musical leadership that help groups listen deeply, rehearse with clarity, and perform as one.</p><EmailIcon />
               </a>
-              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Live%20accompaniment">
-                <span>03</span><h3>Live Accompaniment</h3><p>Responsive, dependable piano support for lessons, rehearsals, auditions, and performances.</p><i>↗</i>
+              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Live%20accompaniment" aria-label="Email about Live Accompaniment">
+                <span>03</span><h3>Live Accompaniment</h3><p>Responsive, dependable piano support for lessons, rehearsals, auditions, and performances.</p><EmailIcon />
               </a>
-              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Music%20direction">
-                <span>04</span><h3>Music Direction</h3><p>Support for rehearsals and performances that brings people together around a shared musical vision.</p><i>↗</i>
+              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Music%20direction" aria-label="Email about Music Direction">
+                <span>04</span><h3>Music Direction</h3><p>Support for rehearsals and performances that brings people together around a shared musical vision.</p><EmailIcon />
               </a>
             </div>
           </details>
@@ -181,11 +192,11 @@ export default function Home() {
               <span className="category-toggle" aria-hidden="true">+</span>
             </summary>
             <div className="category-contents">
-              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Manuscript%20creation">
-                <span>01</span><h3>Manuscript Creation</h3><p>Careful preparation, notation, editing, and refinement that turns musical ideas into clear, usable scores.</p><i>↗</i>
+              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Manuscript%20creation" aria-label="Email about Manuscript Creation">
+                <span>01</span><h3>Manuscript Creation</h3><p>Careful preparation, notation, editing, and refinement that turns musical ideas into clear, usable scores.</p><EmailIcon />
               </a>
-              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Audio%20production">
-                <span>02</span><h3>Audio Production</h3><p>Creative, attentive production that shapes your sound and carries each musical idea clearly from session to finished recording.</p><i>↗</i>
+              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Audio%20production" aria-label="Email about Audio Production">
+                <span>02</span><h3>Audio Production</h3><p>Creative, attentive production that shapes your sound and carries each musical idea clearly from session to finished recording.</p><EmailIcon />
               </a>
             </div>
           </details>
