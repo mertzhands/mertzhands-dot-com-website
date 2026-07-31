@@ -164,7 +164,7 @@ nav a:hover { color: var(--clay); }
 .listening-object span { display: block; padding: 1rem 0 .2rem; font-family: Georgia, serif; font-style: italic; }
 .welcome-note { display: flex; justify-content: flex-end; gap: 1.25rem; }
 .welcome-note .line { width: 8rem; height: 1px; background: var(--ink); margin-top: .7rem; }
-.welcome-note p { max-width: 24rem; margin: 0; line-height: 1.5; }
+.welcome-note p { max-width: 24rem; margin-top: 20px; margin-bottom: 0; line-height: 1.5; }
 
 .practice { padding: 9vw 5vw; background: rgba(242,236,223,.92); }
 .practice-head { display: grid; grid-template-columns: 1fr 2fr; align-items: start; margin-bottom: 5vw; }

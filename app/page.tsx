@@ -192,11 +192,11 @@ export default function Home() {
               <span className="category-toggle" aria-hidden="true">+</span>
             </summary>
             <div className="category-contents">
-              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Manuscript%20creation" aria-label="Email about Manuscript Creation">
-                <span>01</span><h3>Manuscript Creation</h3><p>Careful preparation, notation, editing, and refinement that turns musical ideas into clear, usable scores.</p><EmailIcon />
-              </a>
               <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Audio%20production" aria-label="Email about Audio Production">
-                <span>02</span><h3>Audio Production</h3><p>Creative, attentive production that shapes your sound and carries each musical idea clearly from session to finished recording.</p><EmailIcon />
+                <span>01</span><h3>Audio Production</h3><p>Creative, attentive production that shapes your sound and carries each musical idea clearly from session to finished recording.</p><EmailIcon />
+              </a>
+              <a className="category-offering" href="mailto:hello@mertzhands.com?subject=Manuscript%20creation" aria-label="Email about Manuscript Creation">
+                <span>02</span><h3>Manuscript Creation</h3><p>Careful preparation, notation, editing, and refinement that turns musical ideas into clear, usable scores.</p><EmailIcon />
               </a>
             </div>
           </details>
