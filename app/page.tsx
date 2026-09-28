@@ -33,6 +33,7 @@ export default function Home() {
           <a href="#pricing">Pricing</a>
           <a href="#process">Process</a>
           <a href="#hello">Hello</a>
+          <a href="/studio-policies">Policies</a>
         </nav>
         <div className="header-actions">
           <ThemeToggle />
