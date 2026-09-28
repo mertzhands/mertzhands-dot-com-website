@@ -29,6 +29,8 @@ export default function Home() {
         </a>
         <nav aria-label="Main navigation">
           <a href="#practice">Practice</a>
+          <a href="#tracks">Tracks</a>
+          <a href="#pricing">Pricing</a>
           <a href="#process">Process</a>
           <a href="#hello">Hello</a>
         </nav>
@@ -204,6 +206,207 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="tracks" id="tracks">
+        <div className="tracks-head">
+          <p className="section-no">03 / Audition Tracks</p>
+          <h2>Walk into the room<br />with the right cut, in the right key.</h2>
+        </div>
+        <p className="tracks-intro">
+          Audition tracks built for your voice. Lessons that get you ready.
+          Your 16 bars, cut clean, in the key you actually sing — built like a
+          music director wants to hear it: honest tempo, an ending that lands,
+          no surprises on audition day.
+        </p>
+        <div className="track-grid">
+          <article className="track-card">
+            <p className="track-number">01</p>
+            <h3>The Audition Cut</h3>
+            <p className="track-price">$75</p>
+            <p>One song, cut to your length — 16 or 32 bars, or about a minute. Your key, clean start, ending that lands. Delivered as MP3 and WAV.</p>
+            <a href="mailto:hello@mertzhands.com?subject=Audition%20Cut%20order" aria-label="Email about ordering an Audition Cut">Start an order <EmailIcon /></a>
+          </article>
+          <article className="track-card">
+            <p className="track-number">02</p>
+            <h3>The Audition Cut Plus</h3>
+            <p className="track-price">$115</p>
+            <p>Everything in the Audition Cut, plus a key change and tempo adjustment — for when the published key doesn&rsquo;t sit right in your voice.</p>
+            <a href="mailto:hello@mertzhands.com?subject=Audition%20Cut%20Plus%20order" aria-label="Email about ordering an Audition Cut Plus">Start an order <EmailIcon /></a>
+          </article>
+          <article className="track-card">
+            <p className="track-number">03</p>
+            <h3>The Custom Build</h3>
+            <p className="track-price">$195</p>
+            <p>A multi-song medley or a from-scratch arrangement of your song, built around how you sing it. One key change included.</p>
+            <a href="mailto:hello@mertzhands.com?subject=Custom%20Build%20order" aria-label="Email about ordering a Custom Build">Start an order <EmailIcon /></a>
+          </article>
+          <article className="track-card add-on">
+            <p className="track-number">+</p>
+            <h3>Add a song</h3>
+            <p className="track-price">$65</p>
+            <p>Add another song to the same order and keep everything in one tidy package.</p>
+            <a href="mailto:hello@mertzhands.com?subject=Additional%20song%20order" aria-label="Email about adding a song to an order">Start an order <EmailIcon /></a>
+          </article>
+        </div>
+
+        <div className="tracks-lessons">
+          <h3>Online voice lessons</h3>
+          <p>Forty-five or sixty minutes, one on one, wherever you are. Technique, repertoire, and audition strategy with a working accompanist who hears singers every week.</p>
+          <ul>
+            <li><span>Single lesson, 45 minutes</span><strong>$80</strong></li>
+            <li><span>Single lesson, 60 minutes</span><strong>$100</strong></li>
+            <li><span>Four-lesson package</span><strong>$280</strong></li>
+            <li><span>Prescreen coaching session, 60 minutes</span><strong>$120</strong></li>
+          </ul>
+          <p className="lesson-note">Prescreen coaching: we run your cuts like the real thing, then review your tracks together.</p>
+        </div>
+
+        <div className="tracks-cta">
+          <p>Tell me your song and your audition date — we&rsquo;ll take it from there.</p>
+          <a href="mailto:hello@mertzhands.com?subject=Audition%20track%20inquiry">hello@mertzhands.com ↗</a>
+        </div>
+
+        <div className="sample-grid">
+          <p className="section-no">Sample tracks</p>
+          <div className="sample-cards">
+            {[1, 2, 3].map((n) => (
+              <div className="sample-card" key={n}>
+                <span>0{n}</span>
+                <p>Sample track — coming soon</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <aside className="testimonial-note">
+          <p className="section-no">What singers say</p>
+          <p>Coming soon — kind words from the studio.</p>
+        </aside>
+      </section>
+
+      <section className="pricing" id="pricing">
+        <div className="pricing-head">
+          <p className="section-no">04 / Pricing &amp; Booking</p>
+          <h2>Straightforward pricing,<br />no surprises.</h2>
+        </div>
+        <p className="pricing-intro">
+          College prescreen and audition season runs October through February.
+          Book early — rush slots fill first. All prices in USD.
+        </p>
+
+        <div className="price-columns">
+          <div>
+            <h3>Custom audition tracks</h3>
+            <ul className="price-list">
+              <li><span>The Audition Cut</span><strong>$75</strong></li>
+              <li><span>The Audition Cut Plus</span><strong>$115</strong></li>
+              <li><span>The Custom Build</span><strong>$195</strong></li>
+              <li><span>Add a song to the same order</span><strong>$65</strong></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Online voice lessons</h3>
+            <ul className="price-list">
+              <li><span>Single lesson, 45 minutes</span><strong>$80</strong></li>
+              <li><span>Single lesson, 60 minutes</span><strong>$100</strong></li>
+              <li><span>Four-lesson package</span><strong>$280</strong></li>
+              <li><span>Prescreen coaching, 60 minutes</span><strong>$120</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="turnaround">
+          <h3>Turnaround</h3>
+          <table className="turnaround-table">
+            <thead>
+              <tr><th>Speed</th><th>Delivery</th><th>Added cost</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Standard</td><td>5 business days</td><td>Included</td></tr>
+              <tr><td>Express</td><td>3 business days</td><td>+35%</td></tr>
+              <tr><td>Rush</td><td>48 hours</td><td>+60%</td></tr>
+            </tbody>
+          </table>
+          <p>The clock starts when we have your music <em>and</em> your payment. Business days are Monday through Friday.</p>
+        </div>
+
+        <div className="booking-steps">
+          <h3>How ordering a track works</h3>
+          <ol className="steps">
+            <li><div><strong>You reach out.</strong><p>Email us — the song and your audition date are enough to start.</p></div></li>
+            <li><div><strong>You send your materials.</strong><p>Sheet music, a reference recording link, and your notes: cut points, key, tempo, ending, deadline.</p></div></li>
+            <li><div><strong>We confirm and invoice.</strong><p>You get a quote with the tier and turnaround; payment reserves your production slot.</p></div></li>
+            <li><div><strong>We build your track.</strong><p>MP3 and WAV by the agreed date — your length, your key, your tempo.</p></div></li>
+            <li><div><strong>One revision round, included.</strong><p>Small fixes within 7 days of delivery.</p></div></li>
+            <li><div><strong>Audition day.</strong><p>Your track, your key, your tempo. Break a leg.</p></div></li>
+          </ol>
+          <h3>How booking a lesson works</h3>
+          <ol className="steps">
+            <li><div><strong>Pick your lesson type.</strong><p>Single lesson, four-lesson package, or prescreen coaching.</p></div></li>
+            <li><div><strong>Choose a time.</strong><p>Tell us your time zone when you book — we&rsquo;re on Central time.</p></div></li>
+            <li><div><strong>Invoice and payment lock it in.</strong><p>Lessons are paid in full when you book.</p></div></li>
+            <li><div><strong>Your meeting link arrives by email.</strong><p>Bring your book and your questions.</p></div></li>
+            <li><div><strong>We work.</strong><p>Technique, repertoire, and audition strategy — or a full prescreen run-through.</p></div></li>
+            <li><div><strong>Follow-up notes after.</strong><p>What we covered and what to practice next.</p></div></li>
+          </ol>
+        </div>
+
+        <div className="terms">
+          <h3>The fine print, plainly</h3>
+          <details>
+            <summary>Turnaround</summary>
+            <p>Standard is 5 business days, Express 3, Rush 48 hours — counted from when we receive both your materials and your payment. If your deadline can&rsquo;t be met, you&rsquo;ll know before you pay, never after.</p>
+          </details>
+          <details>
+            <summary>Revisions</summary>
+            <p>One round of adjustments is included within 7 days of delivery: balance fixes, small tempo tweaks, ending corrections. A new key, a different cut, or a new song counts as a new order.</p>
+          </details>
+          <details>
+            <summary>How to submit your music</summary>
+            <p>Send four things: sheet music (PDF or a clear phone photo), a reference recording link, your notes (song, show, cut points, key, tempo, ending), and your deadline. The clearer the package, the faster the turnaround.</p>
+          </details>
+          <details>
+            <summary>Payment</summary>
+            <p>We invoice you directly — there&rsquo;s no online checkout. Orders under $150 are paid in full before delivery; orders of $150 or more take a 50% deposit to book your slot, with the balance due on delivery. No refunds on delivered custom work; if we miss your agreed deadline, you get a full refund.</p>
+          </details>
+          <details>
+            <summary>Lesson policy</summary>
+            <p>Reschedule or cancel with at least 24 hours&rsquo; notice. Missed appointments without notice are forfeited. Four-lesson packages expire 90 days after purchase.</p>
+          </details>
+          <details>
+            <summary>A note on rights</summary>
+            <p>Tracks are made for audition and rehearsal use. You&rsquo;re responsible for securing performance rights from the appropriate rights holders if you use them on stage.</p>
+          </details>
+        </div>
+
+        <div className="faq">
+          <h3>Questions, answered</h3>
+          <details>
+            <summary>What exactly do you need from me to start a track?</summary>
+            <p>Sheet music, a link to a reference recording, and a few notes: where the cut starts and ends, the key, the tempo, how you want it to end, and your deadline.</p>
+          </details>
+          <details>
+            <summary>How fast can I get my track?</summary>
+            <p>Standard turnaround is 5 business days. Need it sooner? Express delivers in 3 business days (+35%) and Rush in 48 hours (+60%).</p>
+          </details>
+          <details>
+            <summary>How does payment work?</summary>
+            <p>We send you an invoice directly and you pay us — no checkout, no accounts. Your slot is reserved once payment (or deposit) arrives.</p>
+          </details>
+          <details>
+            <summary>What if I need changes after delivery?</summary>
+            <p>One round of small fixes is included within 7 days. A new key, a different cut, or a new song is a new order.</p>
+          </details>
+          <details>
+            <summary>Can I use the track in a performance?</summary>
+            <p>Tracks are built for auditions and rehearsal. For stage use, you&rsquo;ll need to secure performance rights from the rights holders.</p>
+          </details>
+          <details>
+            <summary>Where do online lessons happen?</summary>
+            <p>Online — your meeting link arrives by email after booking. We&rsquo;re on Central time, so mention your time zone when you book.</p>
+          </details>
+        </div>
+      </section>
+
       <section className="process" id="process">
         <figure>
           <div className="image-wrap">
@@ -212,7 +415,7 @@ export default function Home() {
           <figcaption>A good process feels like breathing.</figcaption>
         </figure>
         <div className="process-copy">
-          <p className="section-no">03 / Process</p>
+          <p className="section-no">05 / Process</p>
           <h2>Quietly curious.<br />Genuinely collaborative.</h2>
           <p className="intro">
             We begin with what you want to accomplish. Then we shape a path
@@ -228,7 +431,7 @@ export default function Home() {
 
       <section className="hello" id="hello">
         <div className="leaf" aria-hidden="true" />
-        <p className="section-no">04 / Hello</p>
+        <p className="section-no">06 / Hello</p>
         <p className="hello-note">Your goals are just the beginning.</p>
         <h2>Share your ideas.<br /><em>Together, we’ll bring them to life.</em></h2>
         <a href="mailto:hello@mertzhands.com">hello@mertzhands.com ↗</a>

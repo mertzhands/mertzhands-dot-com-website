@@ -912,3 +912,124 @@ header {
     scrollbar-width: thin;
   }
 }
+
+/* Audition tracks + pricing & booking (business package) */
+.tracks { padding: 9vw 5vw; background: #ece1cd; }
+.tracks-head, .pricing-head { display: grid; grid-template-columns: 1fr 2fr; align-items: start; margin-bottom: 3vw; }
+.tracks-head h2, .pricing-head h2 {
+  font-family: Georgia, serif; font-weight: 400; font-size: clamp(3rem, 5.5vw, 6rem);
+  line-height: .95; letter-spacing: -.045em; margin: 0;
+}
+.tracks-intro, .pricing-intro { max-width: 44rem; font-size: 1.15rem; line-height: 1.55; margin: 0 0 4vw; }
+
+.track-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.4rem; margin-bottom: 5vw; }
+.track-card {
+  border: 1px solid rgba(63, 43, 29, .3); background: #f4eddf;
+  padding: 1.7rem; display: flex; flex-direction: column; gap: .6rem;
+}
+.track-card .track-number { font-size: .65rem; font-weight: 700; letter-spacing: .14em; margin: 0; }
+.track-card h3 { font-family: Georgia, serif; font-weight: 400; font-size: 1.9rem; margin: 0; line-height: 1; }
+.track-card .track-price { font-family: Georgia, serif; font-size: 2.4rem; color: var(--clay); margin: 0; }
+.track-card p { line-height: 1.45; margin: 0; }
+.track-card a {
+  margin-top: auto; padding-top: 1rem; display: inline-flex; align-items: center; gap: .42rem;
+  font-size: .7rem; text-transform: uppercase; letter-spacing: .12em; font-weight: 700;
+  text-decoration: none; border-bottom: 1px solid; padding-bottom: .35rem; align-self: flex-start;
+}
+.track-card a:hover { color: var(--clay); }
+.track-card a .email-icon { width: 1rem; height: .8rem; display: block; }
+.track-card.add-on { background: #d8c7aa; }
+
+.tracks-lessons { border-top: 1px solid var(--line); padding-top: 3vw; margin-bottom: 5vw; max-width: 60rem; }
+.tracks-lessons h3, .price-columns h3, .turnaround h3, .booking-steps h3, .terms h3, .faq h3 {
+  font-family: Georgia, serif; font-weight: 400; font-size: clamp(1.8rem, 2.6vw, 2.6rem);
+  letter-spacing: -.03em; margin: 0 0 1.5rem;
+}
+.tracks-lessons > p { line-height: 1.55; max-width: 44rem; margin: 0; }
+.tracks-lessons ul { list-style: none; padding: 0; margin: 2rem 0; }
+.tracks-lessons li {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
+  padding: 1rem 0; border-bottom: 1px solid var(--line);
+}
+.tracks-lessons li strong { font-family: Georgia, serif; font-size: 1.5rem; font-weight: 400; color: var(--clay); white-space: nowrap; }
+.lesson-note { font-style: italic; }
+
+.tracks-cta {
+  background: var(--moss); color: var(--paper); padding: 4vw 5vw;
+  display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center; justify-content: space-between;
+  margin-bottom: 5vw;
+}
+.tracks-cta p { font-family: Georgia, serif; font-size: clamp(1.6rem, 2.6vw, 2.6rem); margin: 0; letter-spacing: -.02em; max-width: 34rem; }
+.tracks-cta a { color: var(--paper); font-size: 1.1rem; text-decoration: none; border-bottom: 1px solid; padding-bottom: .35rem; white-space: nowrap; }
+
+.sample-grid { margin-bottom: 4vw; }
+.sample-grid .section-no { margin: 0 0 1.5rem; }
+.sample-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.4rem; }
+.sample-card { border: 1px dashed rgba(63, 43, 29, .45); padding: 2.5rem 1.7rem; text-align: center; opacity: .75; }
+.sample-card span { font-family: Georgia, serif; font-style: italic; font-size: 1.4rem; display: block; margin-bottom: .6rem; }
+.sample-card p { margin: 0; font-size: .7rem; text-transform: uppercase; letter-spacing: .14em; font-weight: 700; }
+
+.testimonial-note { border-top: 1px solid var(--line); padding-top: 2.5vw; max-width: 40rem; }
+.testimonial-note .section-no { margin: 0; }
+.testimonial-note p:last-child { font-family: Georgia, serif; font-style: italic; font-size: 1.4rem; margin: .8rem 0 0; }
+
+.pricing { padding: 9vw 5vw; background: #f4eddf; }
+.price-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 4vw; margin-bottom: 5vw; }
+.price-list { list-style: none; padding: 0; margin: 0; }
+.price-list li {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
+  padding: 1.1rem 0; border-bottom: 1px solid var(--line);
+}
+.price-list li strong { font-family: Georgia, serif; font-weight: 400; font-size: 1.6rem; color: var(--clay); white-space: nowrap; }
+
+.turnaround { margin-bottom: 5vw; max-width: 60rem; }
+.turnaround-table { width: 100%; border-collapse: collapse; margin: 0 0 1.5rem; }
+.turnaround-table th, .turnaround-table td { text-align: left; padding: 1rem 1.2rem; border-bottom: 1px solid var(--line); }
+.turnaround-table th { font-size: .68rem; text-transform: uppercase; letter-spacing: .14em; }
+.turnaround-table td:first-child { font-weight: 700; }
+.turnaround p { line-height: 1.55; max-width: 44rem; margin: 0; }
+
+.booking-steps { margin-bottom: 5vw; max-width: 60rem; }
+.booking-steps h3 { margin-top: 3.5rem; }
+.booking-steps h3:first-child { margin-top: 0; }
+.steps { list-style: none; padding: 0; margin: 0; counter-reset: step; }
+.steps li { counter-increment: step; display: grid; grid-template-columns: 3rem 1fr; gap: 1rem; padding: 1.3rem 0; border-top: 1px solid var(--line); }
+.steps li::before { content: "0" counter(step); font-size: .68rem; margin-top: .3rem; }
+.steps strong { font-family: Georgia, serif; font-size: 1.5rem; font-weight: 400; display: block; }
+.steps p { margin: .4rem 0 0; line-height: 1.5; opacity: .85; }
+
+.terms, .faq { margin-bottom: 5vw; max-width: 60rem; }
+.faq { margin-bottom: 0; }
+.terms details, .faq details { border-top: 1px solid var(--line); }
+.terms details:last-child, .faq details:last-child { border-bottom: 1px solid var(--line); }
+.terms summary, .faq summary {
+  cursor: pointer; list-style: none; padding: 1.3rem 2.5rem 1.3rem 0; position: relative;
+  font-family: Georgia, serif; font-size: 1.4rem;
+}
+.terms summary::-webkit-details-marker, .faq summary::-webkit-details-marker { display: none; }
+.terms summary::marker, .faq summary::marker { content: ""; }
+.terms summary::after, .faq summary::after {
+  content: "+"; position: absolute; right: .5rem; top: 1.25rem;
+  font-size: 1.4rem; font-family: Arial, sans-serif; transition: transform .25s ease;
+}
+.terms details[open] summary::after, .faq details[open] summary::after { transform: rotate(45deg); }
+.terms details p, .faq details p { margin: 0 0 1.5rem; line-height: 1.6; max-width: 48rem; }
+.terms summary:focus-visible, .faq summary:focus-visible { outline: 2px solid var(--clay); outline-offset: 4px; }
+
+:root[data-theme="dark"] .tracks { background: #1e1e19; }
+:root[data-theme="dark"] .track-card { background: #26261f; border-color: rgba(241, 231, 213, .22); }
+:root[data-theme="dark"] .track-card.add-on { background: #33302a; }
+:root[data-theme="dark"] .sample-card { border-color: rgba(241, 231, 213, .4); }
+:root[data-theme="dark"] .tracks-cta { background: #3a4436; }
+:root[data-theme="dark"] .pricing { background: #191a17; }
+
+@media (max-width: 760px) {
+  .tracks, .pricing { padding: 6rem 1.25rem; }
+  .tracks-head, .pricing-head { grid-template-columns: 1fr; gap: 2rem; }
+  .track-grid { grid-template-columns: 1fr; }
+  .sample-cards { grid-template-columns: 1fr; }
+  .price-columns { grid-template-columns: 1fr; gap: 3rem; }
+  .tracks-cta { padding: 2.5rem 1.5rem; }
+  .turnaround { overflow-x: auto; }
+  .steps li { grid-template-columns: 2.2rem 1fr; }
+}
