@@ -119,7 +119,7 @@ export default function StudioPolicies() {
       </article>
 
       <footer>
-        <span>© 2026 Mertz Hands</span>
+        <span>© 2026 MERTZHANDS.COM</span>
         <a href="/studio-policies">Studio Policies</a>
         <a href="/">Back home ↑</a>
       </footer>

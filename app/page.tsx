@@ -466,7 +466,7 @@ export default function Home() {
       </section>
 
       <footer>
-        <span>© 2026 Mertz Hands</span>
+        <span>© 2026 MERTZHANDS.COM</span>
         <a href="/studio-policies">Studio Policies</a>
         <span>Made thoughtfully in Houston</span>
         <a href="#top">Back to top ↑</a>
