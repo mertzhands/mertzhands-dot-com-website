@@ -371,6 +371,7 @@ export default function Home() {
           <details>
             <summary>Lesson policy</summary>
             <p>Reschedule or cancel with at least 24 hours&rsquo; notice. Missed appointments without notice are forfeited. Four-lesson packages expire 90 days after purchase.</p>
+            <p><a href="/studio-policies">Read the full Studio Policies →</a></p>
           </details>
           <details>
             <summary>A note on rights</summary>
@@ -465,6 +466,7 @@ export default function Home() {
 
       <footer>
         <span>© 2026 Mertz Hands</span>
+        <a href="/studio-policies">Studio Policies</a>
         <span>Made thoughtfully in Houston</span>
         <a href="#top">Back to top ↑</a>
       </footer>
